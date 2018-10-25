@@ -11,7 +11,7 @@ def sumNums(fileName):
     for i in f:
         numList = re.findall('[0-9]+',i)
         numbers = numbers + numList
-    print(numbers)
+    
     for i in numbers:
         count = count + int(i)
     return count
@@ -39,7 +39,7 @@ def listURLs(fileName):
     for line in f:
         line = line.rstrip()
         url = re.findall("w{3}\.[a-zA-Z0-9_.+-]+\.[a-zA-Z0-9-.]+", line)
-        print(url)  
+         
         urlsList = urlsList + url
     return urlsList
 
